@@ -12,7 +12,7 @@ app.config["SECRET_KEY"] = "your_secret_key_here"
 #   "postgresql://postgres:Nopassword%4003@localhost/test"
 #)
 
-db_url = os.environ.get("DATABASE_URL")
+db_url = os.environ.get("postgresql://flask_db_toa4_user:smCRIXZsW3gJ2A7rduYFSEoP4h9CzTIa@dpg-d6te53vfte5s73foufj0-a/flask_db_toa4")
 
 if db_url and db_url.startswith("postgres://"):
     db_url = db_url.replace("postgres://", "postgresql://", 1)
